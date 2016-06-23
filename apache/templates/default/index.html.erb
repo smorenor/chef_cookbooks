@@ -1,0 +1,5 @@
+<H1 style="color: red">Hello World!</H1>
+<H2>HOSTNAME: <%= node['hostname'] %></H2>
+<H2>IP: <%= node['ipaddress'] %></H2>
+<H2>MEM: <%= node['memory']['total'] %></H2>
+<H2>CPU: <%= node['cpu']['0']['mhz'] %> MHz</H2>

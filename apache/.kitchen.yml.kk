@@ -15,11 +15,10 @@ platforms:
     driver_config:
       image: centos:6.7
       platform: centos
-#  - name: oracle_mio2
-#    driver_config:
+#  - name: oracle_mio
+#     driver_config:
 #      image: oraclelinux:7
 #      platform: rhel
-
 suites:
   - name: default
     run_list:

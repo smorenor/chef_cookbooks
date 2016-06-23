@@ -10,5 +10,11 @@ package 'git' do
 end
 
 file '/etc/motd' do
-	content 'Property of smorenor'
+	content "Property of smorenor
+
+HOSTNAME: #{node['hostname']}
+IP: #{node['ipaddress']}
+MEM: #{node['memory']['total']}
+CPU: #{node['cpu']['0']['mhz']} MHz
+"
 end

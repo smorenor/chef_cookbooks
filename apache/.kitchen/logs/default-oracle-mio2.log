@@ -1,0 +1,43 @@
+I, [2016-06-23T10:26:47.409159 #21316]  INFO -- default-oracle-mio2: -----> Creating <default-oracle-mio2>...
+I, [2016-06-23T10:26:47.661978 #21316]  INFO -- default-oracle-mio2: Sending build context to Docker daemon 28.16 kB
+I, [2016-06-23T10:26:47.662513 #21316]  INFO -- default-oracle-mio2: Sending build context to Docker daemon 
+I, [2016-06-23T10:26:47.715393 #21316]  INFO -- default-oracle-mio2: Step 0 : FROM oraclelinux:7
+I, [2016-06-23T10:26:47.907373 #21316]  INFO -- default-oracle-mio2: 7: Pulling from oraclelinux
+I, [2016-06-23T10:26:47.908375 #21316]  INFO -- default-oracle-mio2: 63e1c02817fc: Pulling fs layer
+I, [2016-06-23T10:26:47.910366 #21316]  INFO -- default-oracle-mio2: 575e955ac1f9: Pulling fs layer
+I, [2016-06-23T10:26:47.910787 #21316]  INFO -- default-oracle-mio2: 3690474eb5b4: Already exists
+I, [2016-06-23T10:26:49.132759 #21316]  INFO -- default-oracle-mio2: 575e955ac1f9: Verifying Checksum
+I, [2016-06-23T10:26:49.133384 #21316]  INFO -- default-oracle-mio2: 575e955ac1f9: Download complete
+E, [2016-06-23T10:26:55.903735 #21316] ERROR -- default-oracle-mio2: Create failed on instance <default-oracle-mio2>.
+E, [2016-06-23T10:26:55.904003 #21316] ERROR -- default-oracle-mio2: ------Exception-------
+E, [2016-06-23T10:26:55.904064 #21316] ERROR -- default-oracle-mio2: Class: Errno::EPERM
+E, [2016-06-23T10:26:55.904187 #21316] ERROR -- default-oracle-mio2: Message: Operation not permitted
+E, [2016-06-23T10:26:55.904242 #21316] ERROR -- default-oracle-mio2: ------Backtrace-------
+E, [2016-06-23T10:26:55.904286 #21316] ERROR -- default-oracle-mio2: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/mixlib-shellout-2.2.6/lib/mixlib/shellout/unix.rb:370:in `kill'
+E, [2016-06-23T10:26:55.904329 #21316] ERROR -- default-oracle-mio2: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/mixlib-shellout-2.2.6/lib/mixlib/shellout/unix.rb:370:in `reap_errant_child'
+E, [2016-06-23T10:26:55.904373 #21316] ERROR -- default-oracle-mio2: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/mixlib-shellout-2.2.6/lib/mixlib/shellout/unix.rb:138:in `ensure in run_command'
+E, [2016-06-23T10:26:55.904444 #21316] ERROR -- default-oracle-mio2: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/mixlib-shellout-2.2.6/lib/mixlib/shellout/unix.rb:146:in `run_command'
+E, [2016-06-23T10:26:55.904492 #21316] ERROR -- default-oracle-mio2: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/mixlib-shellout-2.2.6/lib/mixlib/shellout.rb:259:in `run_command'
+E, [2016-06-23T10:26:55.904540 #21316] ERROR -- default-oracle-mio2: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/shell_out.rb:68:in `run_command'
+E, [2016-06-23T10:26:55.904584 #21316] ERROR -- default-oracle-mio2: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/driver/ssh_base.rb:342:in `run_command'
+E, [2016-06-23T10:26:55.904627 #21316] ERROR -- default-oracle-mio2: /home/chef/.chefdk/gem/ruby/2.1.0/gems/kitchen-docker-2.3.0/lib/kitchen/driver/docker.rb:136:in `docker_command'
+E, [2016-06-23T10:26:55.904671 #21316] ERROR -- default-oracle-mio2: /home/chef/.chefdk/gem/ruby/2.1.0/gems/kitchen-docker-2.3.0/lib/kitchen/driver/docker.rb:255:in `block in build_image'
+E, [2016-06-23T10:26:55.904713 #21316] ERROR -- default-oracle-mio2: /opt/chefdk/embedded/lib/ruby/2.1.0/tempfile.rb:371:in `create'
+E, [2016-06-23T10:26:55.904756 #21316] ERROR -- default-oracle-mio2: /home/chef/.chefdk/gem/ruby/2.1.0/gems/kitchen-docker-2.3.0/lib/kitchen/driver/docker.rb:252:in `build_image'
+E, [2016-06-23T10:26:55.904821 #21316] ERROR -- default-oracle-mio2: /home/chef/.chefdk/gem/ruby/2.1.0/gems/kitchen-docker-2.3.0/lib/kitchen/driver/docker.rb:104:in `create'
+E, [2016-06-23T10:26:55.904868 #21316] ERROR -- default-oracle-mio2: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/instance.rb:431:in `public_send'
+E, [2016-06-23T10:26:55.905097 #21316] ERROR -- default-oracle-mio2: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/instance.rb:431:in `block in perform_action'
+E, [2016-06-23T10:26:55.905158 #21316] ERROR -- default-oracle-mio2: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/instance.rb:495:in `call'
+E, [2016-06-23T10:26:55.905214 #21316] ERROR -- default-oracle-mio2: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/instance.rb:495:in `synchronize_or_call'
+E, [2016-06-23T10:26:55.905261 #21316] ERROR -- default-oracle-mio2: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/instance.rb:460:in `block in action'
+E, [2016-06-23T10:26:55.905363 #21316] ERROR -- default-oracle-mio2: /opt/chefdk/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2016-06-23T10:26:55.905408 #21316] ERROR -- default-oracle-mio2: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/instance.rb:459:in `action'
+E, [2016-06-23T10:26:55.905451 #21316] ERROR -- default-oracle-mio2: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/instance.rb:431:in `perform_action'
+E, [2016-06-23T10:26:55.905517 #21316] ERROR -- default-oracle-mio2: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/instance.rb:359:in `create_action'
+E, [2016-06-23T10:26:55.905563 #21316] ERROR -- default-oracle-mio2: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/instance.rb:348:in `block in transition_to'
+E, [2016-06-23T10:26:55.905606 #21316] ERROR -- default-oracle-mio2: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/instance.rb:347:in `each'
+E, [2016-06-23T10:26:55.905649 #21316] ERROR -- default-oracle-mio2: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/instance.rb:347:in `transition_to'
+E, [2016-06-23T10:26:55.905691 #21316] ERROR -- default-oracle-mio2: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/instance.rb:138:in `converge'
+E, [2016-06-23T10:26:55.905734 #21316] ERROR -- default-oracle-mio2: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/command.rb:176:in `public_send'
+E, [2016-06-23T10:26:55.905776 #21316] ERROR -- default-oracle-mio2: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2016-06-23T10:26:55.905818 #21316] ERROR -- default-oracle-mio2: ----------------------
